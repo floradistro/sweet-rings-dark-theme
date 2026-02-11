@@ -1,7 +1,7 @@
 {
   "name": "sweet-rings-donut-website",
   "version": "1.0.0",
-  "description": "A delicious donut shop website",
+  "description": "A premium dark-themed donut shop website with modern design",
   "main": "index.html",
   "scripts": {
     "start": "npx http-server -p 3000 -o",

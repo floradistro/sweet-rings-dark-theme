@@ -79,6 +79,51 @@ document.querySelectorAll('.menu-item').forEach(item => {
     });
 });
 
+// Special offers countdown and animations
+function updateOffers() {
+    const now = new Date();
+    const day = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const hour = now.getHours();
+    
+    const offerCards = document.querySelectorAll('.offer-card');
+    
+    offerCards.forEach(card => {
+        const badge = card.querySelector('.offer-badge');
+        
+        // Highlight active offers
+        if (badge.textContent === 'MONDAY' && day === 1) {
+            card.style.borderColor = '#ff5252';
+            card.style.boxShadow = '0 0 30px rgba(255, 107, 107, 0.5)';
+            if (hour >= 6 && hour < 14) {
+                badge.style.animation = 'pulse 2s infinite';
+            }
+        } else if (badge.textContent === 'FRIDAY' && day === 5) {
+            card.style.borderColor = '#ff5252';
+            card.style.boxShadow = '0 0 30px rgba(255, 107, 107, 0.5)';
+            badge.style.animation = 'pulse 2s infinite';
+        } else {
+            card.style.borderColor = '#ff6b6b';
+            card.style.boxShadow = 'none';
+            badge.style.animation = 'none';
+        }
+    });
+}
+
+// CSS for pulse animation (added via JS)
+const pulseStyle = document.createElement('style');
+pulseStyle.textContent = `
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+`;
+document.head.appendChild(pulseStyle);
+
+// Update offers on load and every minute
+updateOffers();
+setInterval(updateOffers, 60000);
+
 // Fun donut rain effect (subtle)
 function createDonut() {
     const donut = document.createElement('div');
@@ -111,9 +156,10 @@ setInterval(() => {
     }
 }, 3000);
 
-// Welcome message
-console.log('🍩 Welcome to Sweet Rings Donut Co! 🍩');
-console.log('Thanks for visiting our website. Fresh donuts made daily!');
+// Welcome message with dark theme styling
+console.log('%c🍩 Welcome to Sweet Rings Donut Co! 🍩', 'color: #ff6b6b; font-size: 16px; font-weight: bold;');
+console.log('%cThanks for visiting our dark-themed bakery website!', 'color: #e0e0e0; background: #1a1a1a; padding: 4px;');
+console.log('%cFresh artisan donuts crafted daily!', 'color: #ff6b6b;');
 
 // Simple analytics tracking
 let pageViews = localStorage.getItem('donut-page-views') || 0;

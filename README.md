@@ -4,11 +4,13 @@ A modern, responsive website for Sweet Rings Donut Co. featuring a sleek dark th
 
 ## Features
 
-- **Dark Theme Design**: Professional dark color scheme with orange accents
+- **Dark Theme Design**: Professional dark color scheme with animated orange accents
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
-- **Modern UI**: Clean, modern interface with smooth animations
-- **Interactive Elements**: Hover effects and smooth scrolling
-- **Menu Showcase**: Beautiful display of donut offerings with pricing
+- **Modern UI**: Clean, modern interface with advanced animations and transitions
+- **Interactive Elements**: Dynamic hover effects, smooth scrolling, and real-time updates
+- **Menu Showcase**: Beautiful display of artisan donut offerings with premium pricing
+- **Special Offers**: Daily specials section with time-based highlighting
+- **Advanced Animations**: Gradient animations, sparkle effects, and interactive cards
 - **Contact Information**: Store hours, location, and ordering options
 
 ## Technologies Used
@@ -46,11 +48,20 @@ npm run dev
 
 ## Sections
 
-- **Hero**: Main landing section with call-to-action
+- **Hero**: Animated landing section with gradient background and call-to-action
 - **Features**: Key selling points (Fresh Daily, Premium Ingredients, Fast Delivery)
-- **Menu**: Signature donut showcase with prices
+- **Menu**: Artisan donut showcase with premium pricing
+- **Special Offers**: Daily specials with real-time day/time highlighting
 - **About**: Company story and statistics
 - **Contact/Order**: Location info and ordering options
+
+## Interactive Features
+
+- **Real-time Offer Highlighting**: Special offers glow and pulse when active
+- **Animated Backgrounds**: Subtle sparkle effects and gradient animations
+- **Enhanced Console Messages**: Styled welcome messages in browser console
+- **Dynamic Pricing**: Updated premium pricing structure
+- **Advanced Hover Effects**: Multi-layered animations and transitions
 
 ## Responsive Breakpoints
 
