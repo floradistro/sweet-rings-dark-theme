@@ -1,0 +1,13 @@
+{
+  "name": "sweet-rings-donut-website",
+  "version": "1.0.0",
+  "description": "A delicious donut shop website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o",
+    "dev": "npx http-server -p 3000 -o -c-1"
+  },
+  "keywords": ["donuts", "bakery", "website", "food"],
+  "author": "Sweet Rings Donut Co.",
+  "license": "MIT"
+}
