@@ -2,6 +2,12 @@
 
 A modern, responsive website for Sweet Rings Donut Co. featuring a sleek dark theme design.
 
+## 🚀 Live Demo
+
+- **Production Site**: [https://sweet-rings-donut.vercel.app](https://sweet-rings-donut.vercel.app)
+- **GitHub Pages**: [https://floradistro.github.io/sweet-rings-dark-theme/](https://floradistro.github.io/sweet-rings-dark-theme/)
+- **Repository**: [https://github.com/floradistro/sweet-rings-dark-theme](https://github.com/floradistro/sweet-rings-dark-theme)
+
 ## Features
 
 - **Dark Theme Design**: Professional dark color scheme with animated orange accents
@@ -44,6 +50,26 @@ A modern, responsive website for Sweet Rings Donut Co. featuring a sleek dark th
 To run the development server:
 ```bash
 npm run dev
+```
+
+## 📦 Deployment
+
+This project is automatically deployed to Vercel and GitHub Pages:
+
+- **Vercel**: Connected to GitHub for automatic deployments on push to main branch
+- **GitHub Pages**: Auto-builds from main branch
+- **Custom Domain**: Available at sweet-rings-donut.vercel.app
+
+### Manual Deployment
+
+Deploy to Vercel manually:
+```bash
+vercel --prod
+```
+
+Or deploy a preview:
+```bash
+vercel
 ```
 
 ## Sections
